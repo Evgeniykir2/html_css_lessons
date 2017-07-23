@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "LusidaSansUnicode";
+    src: url('../fonts/lusidasansunicode/LucidaSansUnicode.eot?#iefix') format('embedded-opentype'), url('../fonts/lusidasansunicode/LucidaSansUnicode.woff') format('woff'), url('../fonts/lusidasansunicode/LucidaSansUnicode.ttf') format('truetype'), url('../fonts/lusidasansunicode/LucidaSansUnicode.svg#LucidaSansUnicode') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LusidaSansUnicode";
+    font-size: 14px;
+}
+
+.conteiner {
+    max-width: 878px;
+    min-width: 300px;
+    max-height: 100vv;
+    min-height: 400px;
+    border: 16px solid #2b81ac;
+    background-color: #3399cc;
+    margin: 0 auto;
+}
+
+.headcontent {
+    margin-top: 1em;
+    margin-left: 16%;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footercontent {
+    margin-top: 2em;
+    margin-left: 16%;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.maincontent {
+    max-width: 600px;
+    min-width: 290px;
+    max-height: 650px;
+    min-height: 500px;
+    /*border: 2px solid #ffffff;      */
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontent:hover {
+    opacity: 0.7;
+}
+
+.listweather {
+    list-style: none;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.weatheLisbon {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    height: 96px;
+    background-color: #3399cc;
+    border-left: 0px solid #ffffff;
+    border-top: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontent .listweather .weatheLisbon:hover {
+    /*opacity: 1.0;      */
+    background-color: rgba(64, 193, 254, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherParis {
+    margin-left: 0px;
+    margin-right: -4px;
+    width: 25%;
+    height: 96px;
+    background-color: #33cccc;
+    /* border-left: 5px solid #ffffff; */
+    border-left: 4px solid #ffffff;
+    border-top: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherParis:hover {
+    background-color: rgba(57, 229, 229, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherBelgrad {
+    margin-left: -4px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #996699;
+    /* border-left: 5px solid #ffffff; */
+    border-left: 4px solid #ffffff;
+    border-top: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherBelgrad:hover {
+    background-color: rgba(203, 132, 203, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherMoscow {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #c24747;
+    border-left: 0px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherMoscow:hover {
+    background-color: rgba(203, 89, 89, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherTelAviv {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #e2674a;
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherTelAviv:hover {
+    background-color: rgba(281, 128, 93, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherCair {
+    margin-left: -4px;
+    margin-right: -8px;
+    width: 25%;
+    height: 96px;
+    background-color: #ffcc66;
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherCair:hover {
+    background-color: rgba(255, 220, 120, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherNewYork {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #99cc99;
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherNewYork:hover {
+    background-color: rgba(173, 234, 173, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherNewDelhi {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #669999;
+    border-left: 0px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherNewDelhi:hover {
+    background-color: rgba(132, 203, 203, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherSanFrancisco {
+    margin-left: 0px;
+    margin-right: -8px;
+    width: 50%;
+    height: 96px;
+    background-color: #cc6699;
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherSanFrancisco:hover {
+    background-color: rgba(244, 122, 183, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherTocyo {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
+    height: 96px;
+    background-color: #339966;
+    /* border-left: 5px solid #ffffff; */
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherTocyo:hover {
+    background-color: rgba(68, 204, 135, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.weatherSydney {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 96px;
+    background-color: #666699;
+    /* border-left: 5px solid #ffffff; */
+    border-left: 0px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.weatherSydney:hover {
+    background-color: rgba(135, 135, 204, 1.0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.itemlistcontent {
+    display: inline-block;
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    margin: 15px -5px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+li {
+    /*font-size: 0px;      */
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+}
+
+.wi {
+    font-size: 24px;
+}
