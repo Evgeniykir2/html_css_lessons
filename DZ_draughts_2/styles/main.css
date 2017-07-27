@@ -1,0 +1,344 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    width: 55%;
+    height: 70%;
+    min-width: 600px;
+    max-width: 700px;
+    min-height: 600px;
+    max-height: 700px;
+    margin: 2% auto;
+    padding-bottom: 2%;
+    background-color: #e0c9a7;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: #222 0 0 5px 3px;
+}
+
+.main-content {
+    position: relative;
+    /*top: 0;
+    left: 0;          */
+    margin: 2% auto 2% auto;
+    width: 95%;
+    height: 95%;
+    border: 4px solid #191615;
+    font-size: 0;
+}
+
+.item-draght {
+    /*position: relative;          */
+    display: inline-block;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #191615;
+    font-size: 24px;
+    line-height: 3.5;
+}
+
+.item-draght-black {
+    /*position: relative;          */
+    background-color: #191615;
+}
+
+.item-draght-light {
+    /*position: relative;          */
+    background-color: transparent;
+}
+
+
+/*.main-content .item-draght:nth-child(2n + 9) {
+    background-color: transparent;
+}                    */
+
+.item-fiqura {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+
+/*.item-fiqura-red {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+*/
+
+.item-gray-position_1 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_2 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_3 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_4 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_5 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 12.5%;
+    left: 12.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_6 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 12.5%;
+    left: 37.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_7 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 12.5%;
+    left: 62.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_8 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 12.5%;
+    left: 87.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_9 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_10 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_11 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-gray-position_12 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.item-red-position_1 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 62.5%;
+    left: 12.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_2 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 62.5%;
+    left: 37.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_3 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 62.5%;
+    left: 62.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_4 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 62.5%;
+    left: 87.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_5 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_6 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_7 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_8 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_9 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 87.5%;
+    left: 12.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_10 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 87.5%;
+    left: 37.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_11 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 87.5%;
+    left: 62.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.item-red-position_12 {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 87.5%;
+    left: 87.5%;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #b4232a;
+}
+
+.shadow {
+    box-shadow: inset rgba(100, 100, 100, 0.8) 0 0 15px 15px;
+}
