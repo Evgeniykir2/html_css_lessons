@@ -1,0 +1,100 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.conteiner {
+    width: 50%;
+    height: 70%;
+    max-width: 600px;
+    max-height: 650px;
+    margin: 2% auto;
+    padding-bottom: 1%;
+    background-color: #e0c9a7;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: #222 0 0 5px 3px;
+}
+
+.content {
+    width: 96%;
+    height: 96%;
+    margin: 2% auto;
+    border: 4px solid #191615;
+}
+
+
+/*    clearfix      */
+
+.content {
+    clear: both;
+    *zoom: 1;
+}
+
+.content:before,
+.content:after {
+    content: "";
+    display: table;
+}
+
+.content:after {
+    clear: both;
+}
+
+
+/*      end clearfix      */
+
+.content_item_black {
+    float: left;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #191615;
+    line-height: 400%;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.content_item_light {
+    float: left;
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #e0c9a7;
+    line-height: 400%;
+}
+
+.content_figura {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #ccc;      */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.content_figura--gray {
+    background-image: rgb(30, 87, 153);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 20%, rgba(24, 130, 91, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(32, 124, 202, 1) 48%, rgba(41, 137, 216, 1) 48%, rgba(32, 124, 202, 1) 68%, rgba(125, 185, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 20%, rgba(24, 130, 91, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(32, 124, 202, 1) 48%, rgba(41, 137, 216, 1) 48%, rgba(32, 124, 202, 1) 68%, rgba(125, 185, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(30, 87, 153, 1) 20%, rgba(24, 130, 91, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(41, 137, 216, 1) 43%, rgba(32, 124, 202, 1) 48%, rgba(41, 137, 216, 1) 48%, rgba(32, 124, 202, 1) 68%, rgba(125, 185, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.content_figura--rad {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+20,ba2737+52,f18e99+100 */
+    background: rgb(239, 197, 202);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(239, 197, 202, 1) 0%, rgba(210, 75, 90, 1) 20%, rgba(186, 39, 55, 1) 52%, rgba(241, 142, 153, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(239, 197, 202, 1) 0%, rgba(210, 75, 90, 1) 20%, rgba(186, 39, 55, 1) 52%, rgba(241, 142, 153, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(239, 197, 202, 1) 0%, rgba(210, 75, 90, 1) 20%, rgba(186, 39, 55, 1) 52%, rgba(241, 142, 153, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
