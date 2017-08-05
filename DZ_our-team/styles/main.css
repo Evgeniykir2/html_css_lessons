@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.team {
+  max-width: 1150px;
+  margin: 100px auto;
+  padding: 0 15px;
+  text-align: center; }
+  .team__subtitle {
+    color: #898f8f;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center; }
+  .team__title {
+    font-size: 60px;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 30px; }
+  .team__title-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #ffcc00;
+    font-size: 20px;
+    padding: 0 7px;
+    background-color: #fff;
+    position: relative; }
+    .team__title-icon:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: calc((-450px + 30px)/2);
+      height: 1px;
+      width: 450px;
+      background-color: #ffcc00;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: -1; }
+    .team__title-icon:before {
+      content: '';
+      position: absolute;
+      top: 345px;
+      left: -265px;
+      height: 1px;
+      width: 560px;
+      background-color: #ffcc00;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+
+.team-slider {
+  width: 100%;
+  height: 470px;
+  margin: 140px auto 50px; }
+  .team-slider__item {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative; }
+  .team-slider__photo {
+    -webkit-flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    height: 80%; }
+  .team-slider__info {
+    -webkit-flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%; }
+    .team-slider__info--item {
+      color: #656565;
+      font-family: "Arial", sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      position: relative; }
+      .team-slider__info--item:after {
+        content: '';
+        width: 100px;
+        top: 64px;
+        right: 204px;
+        border-bottom: 1px solid #ffcc00;
+        position: absolute; }
+    .team-slider__info--item2 {
+      color: #656565;
+      font-family: "Arial", sans-serif;
+      font-size: 24px;
+      margin: 64px auto 0; }
+    .team-slider__info--item3 {
+      margin: 32px auto 0; }
+  .team-slider__dots {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .team-slider__dots button {
+      width: 14px;
+      height: 14px;
+      background-color: #ffcc00;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      margin-top: 50px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .team-slider__dots button:hover {
+        border: 2px solid #ffcc00;
+        width: 14px;
+        height: 14px;
+        background-color: #fff; }
+  .team-slider__controls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1100px;
+    max-width: 1120px; }
+    .team-slider__controls button {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border-top: 3px solid #ffcc00;
+      border-left: 3px solid #ffcc00;
+      border-bottom: none;
+      border-right: none;
+      background-color: transparent; }
+    .team-slider__controls .but1 {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .team-slider__controls .but2 {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg); }
+
+.img-wrapper {
+  position: relative;
+  width: 390px;
+  max-width: 390px;
+  height: 390px;
+  max-height: 390px;
+  border: 1px solid #ffcc00;
+  background-image: url("../img/Myteam.png");
+  background-position: -472px 616px; }
+
+/*.img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 50% 50%;
+}*/
+.corner {
+  width: 100px;
+  height: 100px;
+  position: absolute; }
+  .corner--top-left {
+    top: -15px;
+    left: -15px;
+    border-top: 1px solid #ffcc00;
+    border-left: 1px solid #ffcc00; }
+  .corner--top-right {
+    top: -15px;
+    right: -15px;
+    border-top: 1px solid #ffcc00;
+    border-right: 1px solid #ffcc00; }
+  .corner--bottom-left {
+    bottom: -15px;
+    left: -15px;
+    border-bottom: 1px solid #ffcc00;
+    border-left: 1px solid #ffcc00; }
+  .corner--bottom-right {
+    bottom: -15px;
+    right: -15px;
+    border-bottom: 1px solid #ffcc00;
+    border-right: 1px solid #ffcc00; }
+
+.icon-social-facebook_, .icon-social-twitter_, .icon-social-googleplus_, .icon-social-linkedin_ {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.8;
+  color: #ccc; }
+
+.description {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 34px 50px 22px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center;
+  word-spacing: 2px; }
+  .description:after {
+    content: '';
+    width: 50px;
+    top: 165px;
+    right: 220px;
+    border-bottom: 5px solid #ffcc00;
+    border-bottom-style: dashed;
+    position: absolute; }
+
+.viewprofile {
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+  border: 1px solid #ffcc00;
+  margin: 25px auto;
+  width: 120px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .viewprofile:hover {
+    background-color: #ffcc00; }
