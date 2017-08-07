@@ -1,0 +1,290 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: $darkGray;
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $lightGray;
+}
+
+a {
+    color: $darkGray;
+}
+
+.container {
+    max-width: 1500px;
+    background-color: $lightGray;
+    margin: 0 auto;
+    padding: 35px 100px;
+    &__header {
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 1200px;
+        height: 700px;
+        &--itemtop {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 100%;
+            font-family: "Roboto";
+            flex-wrap: wrap;
+            height: 60px;
+            margin: 0 auto 100px auto;
+            padding: 15px 0;
+            &_logo {
+                max-width: 50%;
+                height: 60px;
+                color: $darkGray;
+                /*font-family: "Roboto";      */
+                font-size: 48px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+            }
+            &_nav {
+                max-width: 50%;
+                height: 60px;
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        &--img {
+            width: 100%;
+            display: block;
+        }
+        &--desription {
+            display: flex;
+            justify-content: space-between;
+            background: radial-gradient(ellipse closest-side at 70% 40%, $white 0%, $lightestGray 60%, $lightGray 100%);
+            &_text {
+                max-width: 50%;
+                margin-bottom: 50px;
+                text-align: right;
+                &--item1 {
+                    color: $darkGray;
+                    font-family: "Conv_Raleway-Black";
+                    font-size: 145px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                &--item2 {
+                    margin-top: 30px;
+                    font-size: 24px;
+                    font-family: 'Roboto';
+                    color: $medioGray;
+                    line-height: 1.7em;
+                }
+                &--item3 {
+                    font-size: 24px;
+                    font-family: 'Roboto';
+                    font-weight: 600;
+                    line-height: 2.0em;
+                }
+            }
+            &_img {
+                max-width: 50%;
+                margin-bottom: 50px;
+            }
+        }
+        &--buttons {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.navitem {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navitem:hover {
+    color: $red;
+    text-shadow: 0 0 10px $white;
+}
+
+.navitem:last-of-type {
+    margin: 0;
+}
+
+.viewproject {
+    color: $red;
+    cursor: pointer;
+}
+
+.viewproject:hover {
+    color: $orange;
+}
+
+.buttons {
+    margin: 0 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $darkGray;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.center .buttons:hover {
+    background-color: $red;
+    cursor: pointer;
+}
+
+.buttons[active] {
+    background-color: $red;
+}
+
+.center:hover .buttons:not(:hover) {
+    background-color: $darkGray;
+}
+
+.center {
+    width: 80px;
+    margin: 0 auto;
+}
+
+
+/*     footer   */
+
+.footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 605px;
+    background-color: $lightGray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header,
+    &__content {
+        color: $darkGray;
+        font-family: "Conv_Raleway-Black";
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+    &__content {
+        max-width: 50%;
+        text-align: center;
+        line-height: 1.4em;
+        font-family: "Raleway-Regular";
+        font-size: 18px;
+        font-weight: 200;
+    }
+    &__form {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 700px;
+        height: 70px;
+        border-radius: 35px;
+        background-color: $white;
+        margin-bottom: 100px;
+        &__block {
+            position: relative;
+            width: 70%;
+            &:before {
+                position: absolute;
+                top: 40%;
+                left: 5%;
+                width: 20px;
+                height: 20px;
+                opacity: 0.5;
+                font-family: 'FontAwesome';
+                content: "\f003";
+            }
+            &--input {
+                flex-grow: 0;
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                font-size: 18px;
+                font-style: italic;
+                padding-left: 12%;
+                border: none;
+                border-radius: 35px 0 0 35px;
+                outline: 0;
+            }
+            &--button {
+                position: relative;
+                width: 30%;
+                flex-flow: 0;
+                font-size: 18px;
+                font-family: "Roboto";
+                font-weight: 600;
+                color: $white;
+                text-transform: uppercase;
+                border-radius: 0 35px 35px 0;
+                border: none;
+                background-color: $red;
+                cursor: pointer;
+                outline: none;
+                transition: all 0.4s ease-in-out;
+                &:after {
+                    position: absolute;
+                    top: 42%;
+                    right: 30px;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid $white;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    content: "";
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &--button:hover {
+                background-color: $orange;
+                color: $medioGray;
+            }
+            &--button:hover:after {
+                border-right: 10px solid $white;
+                border-left: none;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+            }
+        }
+    }
+    &__sociallinks {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 65px auto;
+        width: 40%;
+        height: 75px;
+        &--facebook,
+        &--twitter,
+        &--youtube,
+        &--medium {
+            display: inline-block;
+            height: 100%;
+            width: 75px;
+            border-radius: 50%;
+            background-color: $white;
+            font-size: 36px;
+            text-align: center;
+            margin: 0 10px;
+            padding: 18px;
+            line-height: 1.0em;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+        }
+        &--facebook:hover,
+        &--twitter:hover,
+        &--youtube:hover,
+        &--medium:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+    &__copyrite {
+        font-family: "Raleway-Regular";
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: $medioGray;
+        margin-bottom: 32px;
+        &--item {
+            font-weight: 600;
+            color: $darkGray;
+        }
+    }
+}
