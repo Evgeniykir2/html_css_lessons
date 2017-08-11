@@ -1,0 +1,104 @@
+.main {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-justify: center;
+    align-items: center;
+}
+
+@-webkit-keyframes custom-animate {
+    0% {
+        -webkit-transform: translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        -webkit-transform: translateY(10px) translateX(-50%);
+        transform: translateY(10px) translateX(-50%);
+    }
+    100% {
+        -webkit-transform: translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+.hero-bg {
+    @include spritebox(-0px, -0px, 1080px, 1920px);
+    &__img {
+        position: relative;
+        width: 67px;
+        height: 70px;
+        overflow: hidden;
+        margin-bottom: 85px;
+    }
+}
+
+.main-section {
+    padding-top: 280px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    position: relative;
+    &__btn,
+    &__btn--gray {
+        width: 22px;
+        height: 36px;
+        border: 1px solid $white;
+        border-radius: 11px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in-out;
+        &:hover,
+        &:hover &-animate {
+            background-color: $darkPinc;
+        }
+        &-animate {
+            display: inline-block;
+            width: 2px;
+            height: 8px;
+            background-color: $white;
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease-in-out;
+            animation: custom-animate 4s infinite;
+        }
+    }
+    &__btn--gray {
+        border: 1px solid $gray;
+        background-color: $geralBlue;
+        bottom: 10px;
+    }
+    &--logo {
+        display: block;
+        position: absolute;
+        top: -405px;
+        left: -1704px;
+        width: 3000%;
+    }
+    &--heders {
+        color: $white;
+        font-family: "Conv_Lato-Regular", sans-serif;
+        font-size: 54px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+    }
+    &--content {
+        color: $white;
+        font-family: "Conv_Lato-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 1em;
+        margin-bottom: 0.5em;
+        &:last-of-type {
+            margin-bottom: 200px;
+        }
+    }
+}

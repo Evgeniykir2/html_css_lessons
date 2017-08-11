@@ -1,0 +1,44 @@
+.about {
+    margin: 0 auto;
+    min-height: 100vh;
+    /*max-width: 900px;      */
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        width: 100%;
+        max-width: 900px;
+        border: 2px solid $darkGray;
+        padding: 50px;
+        position: relative;
+    }
+    &__title {
+        font-family: 'Conv_Lato-Regular', sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        padding: 0 100px;
+        background-color: $white;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &__text {
+        margin: 20px auto;
+        text-align: center;
+        line-height: 1.6em;
+        color: $gray;
+        font-family: 'Conv_Lato-Regular';
+        font-size: 14px;
+        opacity: 0.6;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__text-2 {
+        width: 60%;
+    }
+}
