@@ -1,0 +1,91 @@
+.container__item {
+    margin: 2%;
+    display: inline-block;
+    padding-top: 40px;
+    width: 30%;
+    max-width: 360px;
+    height: 68%;
+    max-height: 410px;
+    background-color: $white;
+    border-top: 1px solid transparent;
+    &--header {
+        color: $greenolight;
+        font-family: "Miso-Bold";
+        font-size: 50px;
+        text-align: center;
+        /*border-bottom: 1px solid transparent;      */
+        margin: 0 auto 15px;
+    }
+    &--image {
+        position: relative;
+        margin: 0 auto 20px auto;
+        width: 38%;
+        max-width: 140px;
+        height: 32%;
+        max-height: 140px;
+        &_container--last {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 135px;
+            max-height: 77px;
+        }
+        &_container--first {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto 10px auto;
+            max-width: 38%;
+            max-height: 29%;
+        }
+        &_container--center {
+            position: absolute;
+            max-width: 25%;
+            max-height: 25%;
+            top: 20%;
+            left: 32%;
+        }
+    }
+    &--footer {
+        margin: 0 auto 30px auto;
+        &_header {
+            margin: 0 auto 20px auto;
+            color: $graydark;
+            font-family: "Miso-Bold";
+            font-size: 56px;
+            text-align: center;
+        }
+        &_content {
+            margin: 0 auto;
+            max-width: 40%;
+            line-height: 1.3em;
+            color: $graydark;
+            font-family: "Miso";
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.container__item--center {
+    height: 85%;
+    max-height: 500px;
+}
+
+.container__item--header_center {
+    margin-bottom: 20px;
+}
+
+.container__item--image_center {
+    margin-bottom: 30px;
+}
+
+.container__item--footer_center {
+    margin-bottom: 40px;
+}
+
+.first__img--1,
+.first__img--2,
+.first__img--3 {
+    display: block;
+    width: 100%;
+}

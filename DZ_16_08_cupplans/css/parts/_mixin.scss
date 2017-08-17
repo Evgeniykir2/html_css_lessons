@@ -1,0 +1,9 @@
+@mixin spritebox($left, $top, $height, $width, $size) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    height: $size;
+    width: $size;
+    max-height: $height;
+    max-width: $width;
+}

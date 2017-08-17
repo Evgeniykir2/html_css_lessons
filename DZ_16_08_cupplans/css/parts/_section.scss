@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 10% auto auto;
+    padding: 10px;
+    background-color: $yellowlight;
+}
+
+@media screen and(max-width:1200px) {
+    .container {
+        margin: 10% 2% auto;
+    }
+}
