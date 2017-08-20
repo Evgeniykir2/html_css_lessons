@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px;
+    min-width: 420px;
+    min-height: 600px;
+    max-width: 1600px;
+    max-height: 1400px;
+    font-family: 'HansKendrick-Regular', sans-serif;
+    background-color: $graylighter;
+    &__footer {
+        font-family: 'HansKendrick-Regular', sans-serif;
+        color: $grayMedeum;
+        display: flex;
+        max-width: 50%;
+        align-items: center;
+        justify-content: space-around;
+        height: 40px;
+        &--img {
+            margin: 5px;
+        }
+        &--content {
+            margin: 5px;
+        }
+    }
+}
