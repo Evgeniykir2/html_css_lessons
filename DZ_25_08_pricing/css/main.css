@@ -1394,101 +1394,110 @@ body {
   height: calc(100%-54px);
   overflow: hidden; }
 
-.popular--red {
-  position: absolute;
-  top: 20px;
-  right: 22px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  padding-top: 10px;
-  line-height: 1em;
-  text-align: center;
-  font-size: 24px;
-  color: #fff;
-  background-color: #fd8d7b;
-  -webkit-animation-name: popular_animation;
-  animation-name: popular_animation;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.popular--red:before {
-  position: absolute;
-  content: '';
-  top: -6px;
-  right: -10px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #fd8d7b;
-  -webkit-animation-name: popular_animation;
-  animation-name: popular_animation;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.popular--red:after {
-  position: absolute;
-  content: '';
-  top: -12px;
-  right: -16px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #fd8d7b;
-  -webkit-animation-name: popular_animation;
-  animation-name: popular_animation;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.popular--black {
-  position: absolute;
-  top: 10%;
-  right: 28%;
-  content: '';
-  width: 100px;
-  height: 30px;
-  padding-top: 8px;
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  background-color: #3b3b3b;
-  z-index: 10;
-  border-radius: 10px 15px 15px 10px;
-  -webkit-animation-name: popular_animation;
-  animation-name: popular_animation;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.popular--black:before {
-  position: absolute;
-  content: '';
-  top: 7.5px;
-  left: -5px;
-  -webkit-transform: translate(-50% 50%);
-  -ms-transform: translate(-50% 50%);
-  transform: translate(-50% 50%);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 15px;
-  height: 15px;
-  background-color: #3b3b3b; }
+.popular {
+  /*&--black:before {
+        position: absolute;
+        content: '';
+        top: 7.5px;
+        left: -5px;
+        transform: translate(-50% 50%);
+        transform: rotate(45deg);
+        width: 15px;
+        height: 15px;
+        background-color: #3b3b3b;
+    }
+    */ }
+  .popular--red {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding-top: 10px;
+    line-height: 1em;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: #fd8d7b;
+    -webkit-animation-name: popular_animation;
+    animation-name: popular_animation;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .popular--red:before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    right: -10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fd8d7b;
+    -webkit-animation-name: popular_animation;
+    animation-name: popular_animation;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .popular--red:after {
+    position: absolute;
+    content: '';
+    top: -12px;
+    right: -16px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fd8d7b;
+    -webkit-animation-name: popular_animation;
+    animation-name: popular_animation;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .popular--black {
+    position: absolute;
+    top: 10%;
+    right: 28%;
+    content: '';
+    width: 100px;
+    height: 30px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3b3b3b;
+    z-index: 10;
+    border-radius: 0 15px 15px 0;
+    -webkit-animation-name: popular_animation;
+    animation-name: popular_animation;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .popular--black:before, .popular--black:after {
+    right: 100%;
+    top: 50%;
+    border: 1px solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .popular--black:before {
+    border-color: rgba(136, 186, 213, 0);
+    border-right-color: #1d1c1c;
+    border-width: 15px;
+    margin-top: -15px; }
 
 .font--img {
   margin: 0 auto 30px;

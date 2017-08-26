@@ -255,13 +255,13 @@ body {
         color: #fff;
         background-color: #3b3b3b;
         z-index: 10;
-        border-radius: 10px 15px 15px 10px;
+        border-radius: 0 15px 15px 0;
         animation-name: popular_animation;
         animation-duration: 5s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
-    &--black:before {
+    /*&--black:before {
         position: absolute;
         content: '';
         top: 7.5px;
@@ -271,6 +271,24 @@ body {
         width: 15px;
         height: 15px;
         background-color: #3b3b3b;
+    }
+    */
+    &--black:before,
+    &--black:after {
+        right: 100%;
+        top: 50%;
+        border: 1px solid transparent;
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    &--black:before {
+        border-color: rgba(136, 186, 213, 0);
+        border-right-color: $graydarkdark;
+        border-width: 15px;
+        margin-top: -15px;
     }
 }
 
