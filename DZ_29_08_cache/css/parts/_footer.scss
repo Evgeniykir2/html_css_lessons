@@ -1,0 +1,26 @@
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 95px;
+    background-color: $darkGray;
+    &_content {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        max-width: 1175px;
+        font-family: "Raleway";
+        color: $graylightly;
+        &--left {
+            font-size: 14px;
+        }
+        &--center {
+            font-family: "Pacifico";
+            font-size: 24px;
+            color: $white;
+        }
+    }
+}

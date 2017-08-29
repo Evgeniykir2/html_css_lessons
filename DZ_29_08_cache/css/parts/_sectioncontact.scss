@@ -1,0 +1,113 @@
+.container__contact {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    max-height: 960px;
+    background-image: url('./../img/img10.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1175px;
+        &--header {
+            font-family: "Raleway";
+            color: $darkGray;
+            font-size: 50px;
+            font-weight: 800;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        &--text {
+            width: 30%;
+            font-family: "Raleway";
+            font-size: 16px;
+            color: $darkGray;
+            line-height: 1.5em;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+        &--form {
+            margin-top: 50px;
+            width: 100%;
+            max-height: 500px;
+            &_input,
+            &_input-info {
+                border: none;
+                border-left: 3px solid $seleste;
+                outline: 0;
+                padding-left: 16px;
+                height: 100%;
+                width: 45%;
+                margin-right: 5%;
+                max-width: 500px;
+                color: $white;
+                background-color: $seleste;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    border-left: 3px solid $bluedark;
+                    background-color: $cordemar;
+                }
+                &-comment {
+                    display: inline-block;
+                    line-height: 1.2em;
+                    font-family: "Raleway";
+                    font-size: 16px;
+                    color: $gray;
+                    vertical-align: middle;
+                    &-bold {
+                        display: inline-block;
+                        width: 100%;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &_input-info {
+                color: $white;
+                height: 250px;
+                max-height: 300px;
+            }
+        }
+    }
+}
+
+.enter_address,
+.enter_mail,
+.enter_phone,
+.enter_info {
+    margin: 0 auto 16px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $white;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $white;
+}
+
+
+/* Firefox 19+ */
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: $white;
+}
+
+
+/* Firefox 18- */
+
+input:-ms-input-placeholder {
+    color: $white;
+}

@@ -1,0 +1,99 @@
+.container__servise {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    max-height: 790px;
+    background-color: $bluelight2;
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        /*align-items: space-around;      */
+        height: 700px;
+        margin: 0 auto;
+        padding-top: 5%;
+        width: 100%;
+        max-width: 1175px;
+        &--leftsection,
+        &--img {
+            margin: 5%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &_item {
+                display: flex;
+                width: 100%;
+                height: 12.5%;
+                margin-bottom: 3%;
+                background-color: #fff;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+                &--left {
+                    color: #262626;
+                    font-family: "Raleway";
+                    font-size: 16px;
+                    /*border-right: 1px solid $gray;      */
+                }
+                &--right {
+                    display: inline-block;
+                    width: 25%;
+                    height: 100%;
+                    background-image: url('./../img/icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.right2,
+.right3,
+.right4 {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.right2 {
+    background-image: url('./../img/icon1.png');
+}
+
+.right3 {
+    background-image: url('./../img/icon2.png');
+}
+
+.right4 {
+    background-image: url('./../img/icon3.png');
+}
+
+.our_servises {
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    border-right: 1px solid $gray;
+    text-align: center;
+    padding-top: 1.5em;
+    transition: 0.3s ease-in-out;
+    &:hover,
+    &:hover+span {
+        box-shadow: inset 4px 4px 10px rgba(0, 0, 0, .3), inset -4px -4px 10px rgba(0, 0, 0, .3);
+        /*box-shadow: inset -4px -4px 10px rgba(0, 0, 0, .5);      */
+        font-weight: 600;
+    }
+}
+
+.container__about__content--img_header {
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    font-family: 'Raleway';
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: $white;
+    z-index: 10;
+    /*transform: translate(-50% 50%);      */
+}
