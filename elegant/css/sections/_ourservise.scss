@@ -1,0 +1,62 @@
+.ourservise {
+    margin: 0 auto 40px;
+    max-width: 1600px;
+    height: 100%;
+    max-height: 738px;
+    background-color: $white;
+    @include display-flex(column, center, center);
+    &--header {
+        font-family: Raleway;
+        font-size: 35px;
+        font-weight: 600;
+        color: $blackgray;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    &--separation {
+        width: 86px;
+        height: 2px;
+        background-color: $blackgray;
+        margin-bottom: 70px;
+    }
+    &--content {
+        height: 350px;
+        max-width: 1200px;
+        @include display-flex(row, space-around, center);
+    }
+    &_img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.content {
+    &__item {
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        width: calc((100% - 9%)/3);
+        max-width: 350px;
+        height: 100%;
+        @include display-flex(column, flex-start, center);
+        &--img {
+            margin: 0 auto 50px;
+            width: 100%;
+            height: 100%;
+        }
+        &--header {
+            font-family: Lato;
+            font-weight: 400;
+            font-size: 20px;
+            color: $blackgray;
+            margin-bottom: 45px;
+        }
+        &--description {
+            font-family: Lato;
+            font-weight: 400;
+            font-size: 14px;
+            color: $blackgray;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+}

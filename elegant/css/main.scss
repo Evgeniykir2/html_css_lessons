@@ -1,0 +1,18 @@
+@import './parts/_fonts.scss';
+@import './parts/_reset.scss';
+@import './parts/_colors.scss';
+@import './parts/_mixin.scss';
+@import './parts/_animation.scss';
+.sections__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    max-height: 3886px;
+}
+
+@import './sections/_headersection.scss';
+@import './sections/_ourservise.scss';
+@import './sections/_doloremagna.scss';
+@import './sections/_ourwork.scss';
+@import './sections/_getintouch.scss';

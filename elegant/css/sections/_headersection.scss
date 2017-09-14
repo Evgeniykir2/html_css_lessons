@@ -1,0 +1,150 @@
+.header {
+    margin: 0 auto auto 0;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    /* height: 100%;      */
+    max-height: 900px;
+    background-image: url('./../img/HERO_Img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include display-flex(column,
+    flex-start,
+    center);
+    &__top {
+        margin: 50px auto 220px;
+        width: 80%;
+        height: 20px;
+        @include display-flex(row,
+        center,
+        center);
+        &--logo {
+            /*flex-grow: 1;     
+            margin-left: 75px; */
+            margin-right: 35%;
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            color: $whiteL;
+            @include display-flex(row,
+            space-between,
+            center);
+        }
+        &--navigation {
+            /*flex-grow: 4;      */
+            height: 100%;
+            width: 50%;
+            margin-right: -15%;
+            color: $whiteL;
+            @include display-flex(row,
+            space-between,
+            center);
+        }
+    }
+    &__content {
+        height: 200px;
+        max-height: 400px;
+        @include display-flex(column,
+        center,
+        center);
+    }
+    &-pointer {
+        display: block;
+        position: absolute;
+        width: 92px;
+        height: 92px;
+        top: 80%;
+        left: 50%;
+        border: 2px solid $grayMedeum;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        &--arrow_box {
+            display: block;
+            width: 25%;
+            height: 25%;
+            position: relative;
+            top: 10%;
+            left: 37.5%;
+            border-right: 2px solid $grayMedeum;
+            border-bottom: 2px solid $grayMedeum;
+            transform: rotate(45deg);
+            animation: moving_bottom_top 4s infinite ease-in-out;
+        }
+    }
+}
+
+.top {
+    &--logo {
+        &_img {
+            /*display: inline-block;      */
+            height: 100%;
+            width: 20px;
+            &-item {
+                width: 16px;
+                height: 3px;
+                background-color: $blueL;
+                margin-top: 3px;
+            }
+        }
+        &_text {
+            /* display: inline-block;      */
+            text-transform: uppercase;
+            font-family: 'Lato';
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+    }
+    &--nav_item {
+        text-decoration: none;
+        color: $whiteL;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        @include transition(0.3s);
+        &:hover {
+            /*text-shadow: 0 0 8px $white;*/
+            color: $bluelight;
+            font-weight: 600;
+        }
+    }
+}
+
+.item-middle {
+    width: 10px;
+}
+
+.content {
+    &__header {
+        /*margin-right: -35%;      */
+        color: $white;
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 50px;
+        text-transform: uppercase;
+        /*letter-spacing: 0.1px;      */
+        margin-bottom: 50px;
+    }
+    &__separater {
+        width: 85px;
+        height: 2px;
+        background-color: $white;
+        margin-bottom: 50px;
+    }
+    &__text {
+        color: $white;
+        font-family: Lato;
+        font-weight: 600;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        width: 60%;
+        letter-spacing: 1.0px;
+        line-height: 1.4;
+        text-align: center;
+    }
+}

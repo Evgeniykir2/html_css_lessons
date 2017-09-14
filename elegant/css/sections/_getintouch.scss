@@ -1,0 +1,126 @@
+ .getintouch {
+     margin: 0 auto;
+     max-width: 1600px;
+     height: 800px;
+     background-image: url('./../img/bg3.png');
+     &__conteiner {
+         margin: 0 auto;
+         max-width: 670px;
+         height: 100%;
+         @include display-flex(column,
+         center,
+         center);
+         &--header {
+             font-family: 'Lato';
+             font-size: 26px;
+             font-weight: 500;
+             color: $white;
+             text-transform: uppercase;
+             margin-bottom: 70px;
+         }
+         &--separation {
+             width: 88px;
+             height: 2px;
+             background-color: $white;
+             margin-bottom: 65px;
+         }
+         &--socials {
+             @include display-flex(row,
+             center,
+             center);
+             margin-bottom: 65px;
+             &_item {
+                 margin: 10px;
+                 width: 24px;
+                 height: 24px;
+                 color: $white;
+             }
+         }
+         &--form {
+             width: 100%;
+             max-height: 350px;
+             @include display-flex(column,
+             center,
+             center);
+             &_item {
+                 width: 100%;
+                 margin-bottom: 65px;
+                 & input {
+                     width: 45%;
+                     margin: 0 2% 1%;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .fa-behance {
+     display: block;
+     height: 100%;
+     width: 100%;
+     color: $white;
+     transition: 0.3s ease-in-out;
+     margin-top: 5px;
+     &:hover {
+         color: orange;
+     }
+ }
+ 
+ .socials {
+     &_item {
+         &-be {
+             display: block;
+             text-decoration: none;
+             transition: 0.3s ease-in-out;
+             & svg .filpath {
+                 fill: #ffffff;
+                 transition: 0.3s ease-in-out;
+             }
+             &:hover svg .filpath {
+                 fill: orange;
+             }
+         }
+     }
+ }
+ 
+ .form {
+     &--name,
+     &--email,
+     &--message {
+         display: inline-block;
+         background-color: transparent;
+         border: none;
+         padding: 15px;
+         border-bottom: 2px solid $white;
+     }
+     &--message {
+         width: 96%;
+         margin-bottom: 45px;
+     }
+     &--submit {
+         width: 180px;
+         height: 55px;
+         background-color: transparent;
+         border: 2px solid $white;
+         color: $white;
+         transition: 0.3s ease-in-out;
+         font-size: 22px;
+         cursor: pointer;
+         &:hover {
+             box-shadow: inset 0 0 15px $white;
+             color: orange;
+             border-color: gray;
+         }
+     }
+ }
+ 
+ form input[placeholder],
+ form input::placeholder {
+     outline: none;
+     font-size: 12px;
+     font-style: italic;
+     color: #676767;
+     &:focus {
+         color: $white;
+     }
+ }

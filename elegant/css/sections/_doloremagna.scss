@@ -1,0 +1,62 @@
+.doloremagna {
+    margin: 0 auto;
+    max-width: 1600px;
+    /*height: 100%;*/
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('./../img/IMG.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &__container {
+        margin: 40px auto;
+        height: 100%;
+        max-width: 1170px;
+        @include display-flex(row,
+        space-between,
+        flex-end);
+        flex-wrap: nowrap;
+    }
+    &__left {
+        height: 100%;
+        max-width: calc((100% - 50px)/2);
+        @include display-flex(column,
+        center,
+        flex-start);
+        &--header {
+            font-family: 'Lato';
+            font-size: 36px;
+            font-weight: 400;
+            color: $white;
+            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        &--description {
+            font-family: 'Lato';
+            font-size: 16px;
+            font-weight: 200;
+            color: $white;
+            text-align: left;
+            line-height: 1.4;
+            margin-bottom: 65px;
+        }
+        &--more_linck {
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+            text-align: left;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+    &__right {
+        max-width: calc((100% - 50px)/2);
+        max-height: 425px;
+        &--img {
+            display: block;
+        }
+    }
+}
