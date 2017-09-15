@@ -4,6 +4,7 @@
     width: 100%;
     max-width: 1600px;
     height: 100vh;
+    padding-bottom: 150px;
     /* height: 100%;      */
     max-height: 900px;
     background-image: url('./../img/HERO_Img.png');
@@ -14,7 +15,7 @@
     flex-start,
     center);
     &__top {
-        margin: 50px auto 220px;
+        margin: 50px auto 200px;
         width: 80%;
         height: 20px;
         @include display-flex(row,
@@ -44,7 +45,7 @@
         }
     }
     &__content {
-        height: 200px;
+        height: calc((100vh - 20px -150px));
         max-height: 400px;
         @include display-flex(column,
         center,
@@ -55,7 +56,7 @@
         position: absolute;
         width: 92px;
         height: 92px;
-        top: 80%;
+        bottom: 50px;
         left: 50%;
         border: 2px solid $grayMedeum;
         border-radius: 50%;

@@ -108,6 +108,7 @@
   width: 100%;
   max-width: 1600px;
   height: 100vh;
+  padding-bottom: 150px;
   /* height: 100%;      */
   max-height: 900px;
   background-image: url("./../img/HERO_Img.png");
@@ -132,7 +133,7 @@
   -ms-flex-align: center;
   align-items: center; }
   .header__top {
-    margin: 50px auto 220px;
+    margin: 50px auto 200px;
     width: 80%;
     height: 20px;
     display: -webkit-box;
@@ -201,7 +202,7 @@
       -ms-flex-align: center;
       align-items: center; }
   .header__content {
-    height: 200px;
+    height: calc((100vh - 20px -150px));
     max-height: 400px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -225,7 +226,7 @@
     position: absolute;
     width: 92px;
     height: 92px;
-    top: 80%;
+    bottom: 50px;
     left: 50%;
     border: 2px solid #808080;
     border-radius: 50%;
@@ -707,6 +708,18 @@
         width: 24px;
         height: 24px;
         color: #fff; }
+      .getintouch__conteiner--socials_item5 {
+        font-size: 24px;
+        margin: 10px; }
+      .getintouch__conteiner--socials_item4 {
+        width: 40px;
+        height: 40px;
+        margin: 10px; }
+      .getintouch__conteiner--socials_item2 {
+        margin: 10px;
+        width: 36px;
+        height: 36px;
+        color: #fff; }
     .getintouch__conteiner--form {
       width: 100%;
       max-height: 350px;
@@ -728,11 +741,26 @@
       -ms-flex-align: center;
       align-items: center; }
       .getintouch__conteiner--form_item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         width: 100%;
-        margin-bottom: 65px; }
-        .getintouch__conteiner--form_item input {
-          width: 45%;
-          margin: 0 2% 1%; }
+        margin-bottom: 65px;
+        vertical-align: middle; }
 
 .fa-behance {
   display: block;
@@ -742,12 +770,13 @@
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  margin-top: 5px; }
+  /* margin-top: 5px;          */ }
   .fa-behance:hover {
-    color: orange; }
+    color: #07a9f4; }
 
 .socials_item-be {
   display: block;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -758,17 +787,20 @@
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
   .socials_item-be:hover svg .filpath {
-    fill: orange; }
+    fill: #07a9f4; }
 
 .form--name, .form--email, .form--message {
+  width: 48%;
   display: inline-block;
   background-color: transparent;
   border: none;
-  padding: 15px;
+  font-size: 14px;
+  padding: 0 15px;
+  line-height: 2.0;
   border-bottom: 2px solid #fff; }
 
 .form--message {
-  width: 96%;
+  width: 100%;
   margin-bottom: 45px; }
 
 .form--submit {
@@ -783,36 +815,36 @@
   font-size: 22px;
   cursor: pointer; }
   .form--submit:hover {
-    -webkit-box-shadow: inset 0 0 15px #fff;
-    box-shadow: inset 0 0 15px #fff;
-    color: orange;
-    border-color: gray; }
+    -webkit-box-shadow: inset 0 0 15px #07a9f4;
+    box-shadow: inset 0 0 15px #07a9f4;
+    color: #07a9f4;
+    border-color: #07a9f4; }
 
 form input[placeholder],
 form input::-webkit-input-placeholder {
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: #676767; }
 
 form input[placeholder],
 form input::-moz-placeholder {
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: #676767; }
 
 form input[placeholder],
 form input:-ms-input-placeholder {
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: #676767; }
 
 form input[placeholder],
 form input::placeholder {
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: #676767; }
   form input[placeholder]:focus,
