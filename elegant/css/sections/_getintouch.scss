@@ -61,6 +61,7 @@
                 @include display-flex(row,
                 space-between,
                 center);
+                height: 46px;
                 width: 100%;
                 margin-bottom: 65px;
                 vertical-align: middle;
@@ -103,18 +104,28 @@
     &--name,
     &--email,
     &--message {
+        position: relative;
+        z-index: 10;
         width: 48%;
         display: inline-block;
         background-color: transparent;
         border: none;
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 15px;
-        line-height: 2.0;
+        line-height: 3.0;
+        border-top: 2px solid transparent;
         border-bottom: 2px solid $white;
+        vertical-align: bottom;
+        transition: 0.3s ease;
+        &:hover,
+        &:focus {
+            border-top-color: $white;
+            color: $white;
+            outline: none;
+        }
     }
     &--message {
         width: 100%;
-        margin-bottom: 45px;
     }
     &--submit {
         width: 180px;
@@ -133,6 +144,8 @@
     }
 }
 
+
+/*
 form input[placeholder],
 form input::placeholder {
     outline: none;
@@ -142,4 +155,50 @@ form input::placeholder {
     &:focus {
         color: $white;
     }
+}
+*/
+
+.input_block {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.input_block label {
+    display: block;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input_block label span {
+    display: block;
+    height: 24px;
+    width: 40px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.0;
+    color: $blueL;
+    position: absolute;
+    top: 1em;
+    left: 2em;
+}
+
+.input_block:hover input+label {
+    height: 12px;
+}
+
+.input_block:hover input+label span,
+.input_block input:focus+label span {
+    font-size: 12px;
+    color: $grayMedeum;
+    top: 5px;
 }

@@ -758,6 +758,7 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
+        height: 46px;
         width: 100%;
         margin-bottom: 65px;
         vertical-align: middle; }
@@ -790,18 +791,28 @@
     fill: #07a9f4; }
 
 .form--name, .form--email, .form--message {
+  position: relative;
+  z-index: 10;
   width: 48%;
   display: inline-block;
   background-color: transparent;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 15px;
-  line-height: 2.0;
-  border-bottom: 2px solid #fff; }
+  line-height: 3.0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #fff;
+  vertical-align: bottom;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .form--name:hover, .form--name:focus, .form--email:hover, .form--email:focus, .form--message:hover, .form--message:focus {
+    border-top-color: #fff;
+    color: #fff;
+    outline: none; }
 
 .form--message {
-  width: 100%;
-  margin-bottom: 45px; }
+  width: 100%; }
 
 .form--submit {
   width: 180px;
@@ -820,42 +831,54 @@
     color: #07a9f4;
     border-color: #07a9f4; }
 
-form input[placeholder],
-form input::-webkit-input-placeholder {
-  outline: none;
-  font-size: 14px;
-  font-style: italic;
-  color: #676767; }
-
-form input[placeholder],
-form input::-moz-placeholder {
-  outline: none;
-  font-size: 14px;
-  font-style: italic;
-  color: #676767; }
-
-form input[placeholder],
-form input:-ms-input-placeholder {
-  outline: none;
-  font-size: 14px;
-  font-style: italic;
-  color: #676767; }
-
+/*
 form input[placeholder],
 form input::placeholder {
-  outline: none;
-  font-size: 14px;
-  font-style: italic;
-  color: #676767; }
-  form input[placeholder]:focus,
-  form input::-webkit-input-placeholder:focus {
-    color: #fff; }
-  form input[placeholder]:focus,
-  form input::-moz-placeholder:focus {
-    color: #fff; }
-  form input[placeholder]:focus,
-  form input:-ms-input-placeholder:focus {
-    color: #fff; }
-  form input[placeholder]:focus,
-  form input::placeholder:focus {
-    color: #fff; }
+    outline: none;
+    font-size: 14px;
+    font-style: italic;
+    color: #676767;
+    &:focus {
+        color: $white;
+    }
+}
+*/
+.input_block {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 45px; }
+
+.input_block label {
+  display: block;
+  width: 40px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.input_block label span {
+  display: block;
+  height: 24px;
+  width: 40px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.0;
+  color: #07a9f4;
+  position: absolute;
+  top: 1em;
+  left: 2em; }
+
+.input_block:hover input + label {
+  height: 12px; }
+
+.input_block:hover input + label span,
+.input_block input:focus + label span {
+  font-size: 12px;
+  color: #808080;
+  top: 5px; }
